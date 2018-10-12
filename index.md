@@ -1,9 +1,38 @@
-   Welcome, Mike Mar GitHub Pages
-Markdown
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-Syntax highlighted code block # Header 1 ## Header 2 ### Header 3 - Bulleted - List 1. Numbered 2. List **Bold** and _Italic_ and `Code` text [Link](url) and ![Image](src)
-For more details see GitHub Flavored Markdown.
-Jekyll Themes
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your repository settings. The name of this theme is saved in the Jekyll _config.yml configuration file.
-Support or Contact
-Having trouble with Pages? Check out our documentation or contact support and we’ll help you sort it out.
+Topic 1: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
+            
+            //For Loop
+            for(var i = 0; i <= 10; i++){
+                document.write(i);
+            }
+            document.write("<br/></br>");
+        </script>
+        <script>
+            
+            //Nested Loop
+            for(var i = 0; i <= 10; i++){
+                for(var x = 0; x <= i; x++){
+                    document.write(x);
+                }
+                document.write("<br/>");
+            }
+            
+            //While Loop
+            i = 0;
+            x = 0;
+            document.write("<br/>");
+            while (i < 10) {
+                document.write(i);
+                i++;
+            }
+            
+            //Do While Loop
+            i = 0;
+            x = 0;
+            document.write("<br/><br/>");
+            do {
+                x = i * i; 
+                document.write(x);
+                document.write("<br/>");
+                i++;
+            }
+            while(x < 100);
