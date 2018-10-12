@@ -1,12 +1,10 @@
-Topic 1: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
+            //Topic 1: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
             
             //For Loop
             for(var i = 0; i <= 10; i++){
                 document.write(i);
             }
             document.write("<br/></br>");
-        </script>
-        <script>
             
             //Nested Loop
             for(var i = 0; i <= 10; i++){
