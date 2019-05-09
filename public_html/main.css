@@ -1,5 +1,6 @@
 .topic {
     display: flex;
     flex-direction: row;
+    color: aqua;
 }
 
