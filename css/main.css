@@ -1,7 +1,19 @@
-.topic {
+#topic {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: #0066ff;
+}
+.topic1 {
+    background-color: #0066ff;
+}
+.topic2 {
+    background-color: #0066ff;
+}
+.topic3{
+    background-color: #0066ff;
+}
+.topic4 {
     background-color: #0066ff;
 }
 
