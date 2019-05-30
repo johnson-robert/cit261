@@ -1,34 +1,34 @@
 .bDOM {
-    background-color: #4CAF50;
-    border: none;
+    background-color: #cc9900;
     color: white;
-    height: 25%;
-    padding: 15px 32px;
+    height: auto;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;   
 }
-#topic {
+.topic {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.topic1 {
+#topic1 {
     background-color: #cc9900;
 }
-.topic2 {
+#topic2 {
     background-color: #00cc00;
 }
-.topic3{
+#topic3{
     background-color: #d9d9d9;
 }
-.topic4 {
-    background-color: #ffff00;
+#topic4 {
+    background-color: #ff00ff;
 }
-.topic5 {
-    background-color: #cc9900;
+#topic5 {
+    background-color: #ffffff;
+}
+#topic6 {
+    background-color: #ffffff;
 }
 .colm {
     display: flex;
