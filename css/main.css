@@ -30,6 +30,9 @@
 #topic6 {
     background-color: #ffffff;
 }
+#topic7 {
+    background-color: #dfbf9f;
+}
 .colm {
     display: flex;
     flex-direction: row;
@@ -37,22 +40,34 @@
 }
 
 /*css_animation_transition*/
-
-.helo {
-    height: 100px;
+.motorBox {
+    display: flex;
+    height: 200px;
 }
-.color {
+.helo {
+    height: 75px;
+}
+.motor {
+    height: 50px;
+    align-self: flex-end;
+    position: absolute;
+}
+.bottomBox {
+    object-position: 500px 500px;
+}
+#color {
     background-color: green;
 }
-.buttonClass {
-    background-color: red;
-}
-.buttonOne {
-    background-color: yellowgreen;
-}
-#buttonTwo {
+.buttonTwo {
     background-color: yellow;
 }
+.buttonOne {
+    background-color: red;
+}
+.buttonFour {
+    background-color: yellowgreen;
+}
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     0%   {left:0px; top:0px;}
@@ -74,21 +89,33 @@
 }
 
 #fly {
-    height: 100px;
     background-color: red;
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-    animation-name: flyOne ;
+    animation-name: flyOne;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
     animation-direction: alternate;
 
 }
-.flip {
+#flip {
     transform: rotateY(180deg);
-    transition-delay: 5s;
+    transition-delay: .5s;
 }
 
+
+/*transitions*/
+.buttonTwo:hover, 
+.buttonThree:hover, 
+.buttonFour:hover, 
+.buttonFive:hover {
+    background-color: purple;
+    width: 40px;
+    height: 20px;
+}
+button {
+    transition: width 2s, height 4s;
+}
