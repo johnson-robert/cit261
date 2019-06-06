@@ -35,3 +35,60 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+/*css_animation_transition*/
+
+.helo {
+    height: 100px;
+}
+.color {
+    background-color: green;
+}
+.buttonClass {
+    background-color: red;
+}
+.buttonOne {
+    background-color: yellowgreen;
+}
+#buttonTwo {
+    background-color: yellow;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:150px;}
+    50%  {left:0px; top:200px;}
+    75%  {left:150px; top:200px;}
+    85% {left:100px; top:300px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes flyOne {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:150px;}
+    50%  {left:0px; top:200px;}
+    75%  {left:150px; top:200px;}
+    85% {left:100px; top:300px;}
+    100% {left:0px; top:0px;}
+}
+
+#fly {
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: flyOne ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.flip {
+    transform: rotateY(180deg);
+    transition-delay: 5s;
+}
+
