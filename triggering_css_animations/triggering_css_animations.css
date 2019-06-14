@@ -1,0 +1,67 @@
+/*css_animation_transition CSS*/
+#bottomBox {
+    height: 500px;
+}
+
+#topBox {
+    border: 1px solid black;
+}
+
+.classRed {
+    color: red;
+    font-size: 35px;
+    transform: skewY(-5deg);
+    cursor: not-allowed;
+}
+.class0 {
+    position: relative;
+    animation-name: move0;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move0 {
+   TO{left:100px; top:100px;}
+}
+.class1 {
+    position: relative;
+    animation-name: move1;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move1 {
+    TO{left:10px; top:300px;}
+}
+.class2 {
+    position: relative;
+    animation-name: move2;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move2 {
+    TO{left:200px; top:300px;}
+}
+.class3 {
+    position: relative;
+    animation-name: move3;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move3 {
+    TO{left:200px; top:0px;}
+}
+body {
+    cursor: url(../images/donkey_tail.PNG), auto;
+    /*cursor: crosshair;*/
+}
+.not-allowed {
+    cursor: not-allowed;
+}
+#not-allowed {
+    position: relative;
+    animation-name: moveNot;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveNot {
+    100% {left:0px; top:-50px;}
+}

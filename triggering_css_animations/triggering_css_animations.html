@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://johnson-robert.github.io/cit261/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        <link href="triggering_css_animations.css" rel="stylesheet">
+        <title>CIT 261 Assignment Portal | Rob Johnson | BYU-Idaho</title>
+    </head>
+    <body>
+
+        <div id="topBox">Pin the tail on the donkey.</div>
+        <div id="bottomBox">
+            <p class="not-allowed">Not Here!</p>
+            <img src="https://johnson-robert.github.io/cit261/images/donkey_247_204.jpg"  height="100" alt="Donkey"/>
+        </div>
+        <script>
+            document.getElementById("topBox").addEventListener("mouseover", functionOne);
+
+            function functionOne() {
+                document.getElementsByTagName("div")[0].setAttribute("class", "classRed");
+                document.getElementsByTagName("p")[0].setAttribute("id", "not-allowed");
+            }
+
+            document.getElementsByTagName("img")[0].addEventListener("mouseover", moveDonkey);
+
+            function moveDonkey() {
+                var n;
+                var c;
+                var x = document.getElementsByTagName("img")[0].className;
+                do {
+                    n = Math.floor(Math.random() * 4);
+                    c = n.toString();
+                } while (x === ("class" + c));
+
+                document.getElementsByTagName("img")[0].setAttribute("class", ("class" + c));
+            }
+        </script>
+        
+
+    </body>
+</html>
+
+
