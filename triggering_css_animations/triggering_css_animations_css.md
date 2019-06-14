@@ -1,3 +1,4 @@
+
 /*css_animation_transition CSS*/
 #bottomBox {
     height: 500px;
