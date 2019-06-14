@@ -33,6 +33,12 @@
 #topic7 {
     background-color: #dfbf9f;
 }
+#topic8 {
+    background-color: #99ffff;
+}
+#topic9 {
+    background-color: #ff8080;
+}
 .colm {
     display: flex;
     flex-direction: row;
