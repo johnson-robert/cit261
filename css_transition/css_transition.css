@@ -1,0 +1,80 @@
+/*css_transform*/
+body {
+    cursor: url(../images/mouse_25_37.png), auto;
+    text-align: center;
+}
+img {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+div {
+    height: 200px;
+    text-align: center;
+    
+}
+.divThree {
+/*    display: flex;
+    flex-direction: column;
+    justify-content: space-around;*/
+}
+.insideBox {
+    color: blue;
+    text-align: center;
+    border: 8px red double;
+    border-radius: 5px;
+    background-color: gold;
+}
+.outsideBox {
+    text-align: center;
+    border: 5px blue dotted;
+    border-radius: 5px;
+    background-color: yellowgreen;
+}
+.buttonOne {
+    background-color: plum;
+}
+.oneOne {
+    border-radius: 50%;
+}
+#oneOne {
+    transform: rotate3d(0,0,0,0deg);
+    transition: 3s ease;
+}
+#oneTwo {
+    transform: rotate3d(50,50,50,50deg);
+    transition: 3s ease;
+}
+#oneThree {
+    transform: rotate3d(50,50,50,-50deg);
+    transition: 3s ease;
+}
+#twoOne {
+    transform: translateX(0px);
+    transition: 1.5s ease;
+}
+#twoTwo {
+    transform: translateX(-200px);
+    transition: 1.5s ease;
+}
+#twoThree {
+    transform: translateX(200px);
+    transition: 1.5s ease;
+}
+#threeOne {
+    position: relative;
+    animation-name: threeOne;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes threeOne {
+    0%   {transform: rotate(0deg); left:0px;}
+    25%  {transform: rotate(90deg); left:157px}
+    75% {transform: rotate(-90deg); left:-157px}
+    100% {transform: rotate(0deg); left:0px}
+}
+.fourOne {
+    border-radius: 50%;
+    transition: 3s ease;
+}

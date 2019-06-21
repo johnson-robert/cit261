@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://johnson-robert.github.io/cit261/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        <link href="css_transition.css" rel="stylesheet">
+        <title>CIT 261 Assignment Portal | Rob Johnson | BYU-Idaho</title>
+    </head>
+    <body>
+        <canvas id="canvasBox" width="310" height="100" style="border:5px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag
+        </canvas>
+        <script>
+            var c = document.getElementById("canvasBox");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0, 50);
+            ctx.lineTo(320, 50);
+            ctx.stroke();
+            ctx.font = "20px Arial";
+            ctx.fillText("This box is made with Canvas.", 20, 42);
+            ctx.fillText("This video in a local mp4 file.", 25, 74);
+            ctx.boarderRadius(20);
+        </script>
+        <video width="320" height="180" controls>
+            <source src="../media/Overboard - The Story of Jonah-3V3jfE4QBOQ.mp4" type="video/mp4">
+            Your browser does not support the <code>video</code> tag.
+        </video>
+        <canvas id="canvasBox2" width="310" height="100" style="border:5px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag
+        </canvas>
+        <script>
+            var c = document.getElementById("canvasBox2");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0, 50);
+            ctx.lineTo(320, 50);
+            ctx.stroke();
+            ctx.font = "20px Arial";
+            ctx.fillText("This box is made with Canvas.", 20, 42);
+            ctx.fillText("This video is from YouTube.", 25, 74);
+            ctx.boarderRadius(20);
+        </script>
+        <iframe width="316" height="240" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+        <svg width="400" height="100">
+        <rect width="312" height="100" style="fill:blue;stroke-width:10;stroke:rgb(0,0,0)" />
+        <text fill="#ffffff" font-size="20" font-family="Arial" x="25" y="40">This box is an SVG element.</text>
+        <line x1="0" y1="50" x2="315" y2="50" style="stroke:#000;stroke-width:2" />
+        <text fill="#ffffff" font-size="20" font-family="Arial" x="37" y="75">Below is my favorite mp3.</text>
+        </svg>
+        <audio controls>
+            <source src="../media/David Archuleta  GLORIOUS from Meet the Mormons.mp3" type="audio/mpeg">
+            Your browser does not support the <code>audio</code> tag.
+        </audio>
+    </body>
+</html>
