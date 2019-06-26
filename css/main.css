@@ -45,6 +45,12 @@
 #topic11 {
     background-color: #996600;
 }
+#topic12 {
+    background-color: #ffffff;
+}
+#topic13 {
+    background-color: #ffff33;
+}
 .colm {
     display: flex;
     flex-direction: row;
