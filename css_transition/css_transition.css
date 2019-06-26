@@ -1,6 +1,8 @@
 /*css_transform*/
 body {
-    cursor: url(../images/mouse_25_37.png), auto;
+    /*cursor: url(../images/mouse_25_37.png), auto;*/
+    /*cursor: url(http://www.rw-designer.com/cursor-extern.php?id=15577), auto;*/
+    cursor: url(../images/yoshi_egg.cur), auto;
     text-align: center;
 }
 img {
